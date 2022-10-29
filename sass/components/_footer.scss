@@ -1,0 +1,12 @@
+.footer {
+  padding: 60px 0;
+
+  background-color: var(--hero-footer-background-color);
+}
+
+.footer > .container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 70px;
+}

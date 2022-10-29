@@ -1,0 +1,58 @@
+.portfolio-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: calc(-1 * var(--gap));
+  margin-left: calc(-1 * var(--gap));
+}
+
+.portfolio-cards-title {
+  margin-bottom: 4px;
+
+  color: var(--main-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-cards-item {
+  margin-top: var(--gap);
+  margin-left: var(--gap);
+
+  flex-basis: calc(100% / 3 - var(--gap));
+}
+
+.box {
+  position: relative;
+  overflow: hidden;
+
+  width: 370px;
+  height: 294px;
+}
+
+.box:hover .overlay {
+  transform: translateX(0);
+}
+
+
+
+.box-content {
+  font-size: 18px;
+  line-height: 1.56;
+
+  color: #ffffff;
+}
+
+.cards-content {
+  padding: 20px 24px;
+
+  border: 0, 1px solid #eeeeee, 1px solid #eeeeee, 1px solid #eeeeee;
+}
+
+.portfolio-cards-text {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
