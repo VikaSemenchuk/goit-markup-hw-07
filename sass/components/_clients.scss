@@ -1,16 +1,16 @@
 .clients-list {
   gap: var(--gap);
+  @extend %aligner;
+
 }
 
-.clients-items {
+.clients-list__items {
   width: calc((100% - 150px) / 6);
   height: 92px;
 }
 
-.clients-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.clients-list__link {
+  @extend %aligner;
 
   width: 100%;
   height: 100%;
@@ -30,7 +30,6 @@
   }
 }
 
-.clients-icon,
-.footer-soc-icon {
+.clients-list__icon {
   fill: currentColor;
 }

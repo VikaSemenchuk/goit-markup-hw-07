@@ -21,9 +21,7 @@
   &-close-btn {
     position: absolute;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %aligner;
 
     padding: 0;
 
@@ -58,9 +56,6 @@
     margin-bottom: 12px;
 
     text-align: center;
-
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include text (700, 20px, 1.15, null, null);
   }
 }

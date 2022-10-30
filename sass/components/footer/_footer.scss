@@ -1,12 +1,22 @@
 .footer {
-  padding: 60px 0;
-
   background-color: var(--hero-footer-background-color);
 
-  & .container {
+  &__container {
     display: flex;
     justify-content: center;
     align-items: baseline;
+
+    padding: 60px 0;
+
     gap: 70px;
+  }
+
+  &__title {
+    text-align: start;
+    margin-bottom: 20px;
+
+    @include text(null, 14px, 1.14, null, var(--studio-footer-color));
+
+    text-transform: uppercase;
   }
 }

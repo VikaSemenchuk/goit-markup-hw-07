@@ -1,0 +1,16 @@
+.logo {
+  @include text(700, 26px, 1.19, null, var(--logo-color));
+  font-family: var(--logo-font);
+}
+
+.logo--black {
+  span {
+    color: var(--studio-header-color);
+  }
+}
+
+.logo--white {
+  span {
+    color: var(--studio-footer-color);
+  }
+}

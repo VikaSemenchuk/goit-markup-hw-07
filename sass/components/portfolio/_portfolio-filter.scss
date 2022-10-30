@@ -1,6 +1,5 @@
 .filter-list {
-  display: flex;
-  justify-content: center;
+  @extend %aligner;
 
   margin: 0 auto;
   margin-bottom: 50px;
@@ -17,9 +16,7 @@
   border-color: transparent;
 
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  @include text(500, 16px, 1.62, null, null);
 
   background-color: #f5f4fa;
 

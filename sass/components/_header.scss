@@ -1,26 +1,30 @@
 .header {
   border-bottom: 1px solid var(--border-color);
 
-  & .container {
-    display: flex;
-    align-items: center;
-  }
-
-  &-nav {
-    display: flex;
-    align-items: center;
+  &__container {
+    @extend %aligner;
   }
 }
 
-.nav-list,
-.header-list-contacts {
-  display: flex;
-  align-items: center;
+.navigation {
+@extend %aligner;
+}
+
+.navigation__logo {
+  margin-right: 93px;
+  
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.menu,
+.contacts {
+  @extend %aligner;
 
   gap: 50px;
 }
 
-.nav-item {
+.menu__item {
   padding: 32px 0;
 
   .current {
@@ -42,37 +46,30 @@
   }
 }
 
-.nav-link {
+.menu__link {
   color: var(--main-color);
 }
 
-.nav-link,
-.contact-link {
+.menu__link,
+.contacts__link {
   position: relative;
   padding: 32px 0;
-
-  font-weight: 500;
-  line-height: 1.33;
-  letter-spacing: 0.02em;
+  @include text (500, null, 1.33, 0.02em, null);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contacts {
-  display: flex;
-  align-items: center;
-
+.header__contacts {
+  @extend %aligner;
   margin-left: auto;
 }
 
-.contact-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contacts__link {
+  @extend %aligner;
   gap: 10px;
   color: var(--text-color);
+}
 
-  &-icon {
+.contacts__icon {
     fill: currentColor;
   }
-}

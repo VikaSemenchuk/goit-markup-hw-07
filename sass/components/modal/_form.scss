@@ -5,11 +5,8 @@
 .form-text {
   display: block;
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
 
-  color: var(--text-color);
+  @include text(null, 12px, 1.16, 0.01em, var(--text-color));
 }
 
 .input-wrap {
@@ -17,8 +14,6 @@
 }
 
 .form-input {
-  @extend %modal-input;
-
   padding-left: 42px;
 
   &:focus {
@@ -43,8 +38,6 @@
 }
 
 .form-comment {
-  // @extend %modal-input;
-
   padding: 12px 16px;
   resize: none;
   height: 120px;
@@ -54,11 +47,7 @@
   }
 
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;
-
-    color: rgba(117, 117, 117, 0.5);
+    @include text(null, 12px, 1.16, 0.01em, rgba(117, 117, 117, 0.5));
   }
 }
 
@@ -75,20 +64,13 @@
 }
 
 .checkbox-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  line-height: 1.71;
-
-  color: var(--text-color);
+  @extend %aligner;
+  @include text(null, null, 1.71, null, var(--text-color));
 
   cursor: pointer;
 
   span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %aligner;
 
     margin-right: 7px;
 
@@ -115,7 +97,6 @@
 }
 
 .form-btn {
-  // @extend %accent-btn;
   margin-top: 30px;
   min-width: 200px;
   outline: transparent;

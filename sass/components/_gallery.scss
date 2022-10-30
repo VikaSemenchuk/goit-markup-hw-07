@@ -1,13 +1,13 @@
-.gallery.section {
+.gallery__section {
   padding-top: 0;
 }
 
-.gallery-list {
+.projects-list {
   display: flex;
   gap: 30px;
 }
 
-.gallery-item {
+.projects-list__item {
   position: relative;
 }
 
@@ -18,12 +18,10 @@
   width: 100%;
   padding: 27px 0;
 
-  font-weight: 700;
+  @include text (700, null, 1.14, null, #ffffff);
 
-  line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
 
-  color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
 }

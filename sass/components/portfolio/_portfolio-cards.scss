@@ -9,12 +9,7 @@
 
 .cards-title {
   margin-bottom: 4px;
-
-  color: var(--main-color);
-
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include text(null, 18px, 2, 0.06em, var(--main-color));
 }
 
 .portfolio-cards-item {
@@ -53,10 +48,7 @@
 }
 
 .box-content {
-  font-size: 18px;
-  line-height: 1.56;
-
-  color: #ffffff;
+  @include text(null, 18px, 1.56, null, #ffffff);
 }
 
 .cards-content {

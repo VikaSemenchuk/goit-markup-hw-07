@@ -1,28 +1,25 @@
-.features-title {
+.features-list__title {
   margin-bottom: 10px;
   margin-top: 30px;
 
-  font-size: 14px;
-  line-height: 1.33;
+   @include text(null, 14px, 1.33, null, null);
 
   text-transform: uppercase;
 }
 
 .features-list,
 .team-list {
-  display: flex;
-  justify-content: center;
+  @extend %aligner;
   gap: 30px;
 }
 
-.features-item {
+.features-list__item {
   max-width: 270px;
+  height: 248px;
 }
 
-.features-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.features-list__wrap {
+  @extend %aligner;
 
   height: 120px;
 
@@ -30,7 +27,7 @@
   border-radius: 4px;
 }
 
-.features-text {
+.features-list__text {
   line-height: 1.71;
 
   color: var(--text-color);

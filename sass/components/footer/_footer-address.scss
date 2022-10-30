@@ -1,23 +1,21 @@
-.footer-address {
+.address__footer {
   margin-top: 20px;
   margin-left: auto;
 
   min-width: 231px;
 }
 
-.footer-item:not(:last-child) {
+.address-list__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-contacts {
+.address-list__link {
   font-style: normal;
-  line-height: 1.71;
-
-  color: rgba(255, 255, 255, 0.6);
-
+  @include text (null, null, 1.71, null, rgba(255, 255, 255, 0.6));
+  
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address, .social {
+.address-list__link--white {
   color: var(--studio-footer-color);
 }
