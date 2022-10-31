@@ -1,4 +1,4 @@
-.portfolio-cards-list {
+.cards-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -7,19 +7,33 @@
   margin-left: calc(-1 * var(--gap));
 }
 
-.cards-title {
+.cards-link {
+  display: block;
+  margin: 0;
+
+  text-decoration: none;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+.cards-link__title {
   margin-bottom: 4px;
   @include text(null, 18px, 2, 0.06em, var(--main-color));
 }
 
-.portfolio-cards-item {
+.cards-list__item {
   margin-top: var(--gap);
   margin-left: var(--gap);
 
   flex-basis: calc(100% / 3 - var(--gap));
 }
 
-.box {
+.cards-link__box {
   position: relative;
   overflow: hidden;
 
@@ -47,17 +61,17 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box-content {
+.overlay__content {
   @include text(null, 18px, 1.56, null, #ffffff);
 }
 
-.cards-content {
+.cards-link__content {
   padding: 20px 24px;
 
   border: 0, 1px solid #eeeeee, 1px solid #eeeeee, 1px solid #eeeeee;
 }
 
-.portfolio-cards-text {
+.cards-link__text {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.88;
