@@ -25,7 +25,7 @@ img {
 
   &:hover,
   &:focus {
-    color: var(--active-link-color);
+    color: $accent-color;
   }
 }
 
@@ -37,11 +37,10 @@ img {
   &:hover,
   &:focus,
   &:active {
-    color: var(--active-btn-color);
-    background-color: var(--active-btn-background-color);
+    color: active-btn-color;
+    background-color: $accent-color;
   }
 }
-
 
 .section {
   padding: 94px 0;

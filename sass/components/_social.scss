@@ -27,23 +27,23 @@
 
 .social--light {
   .social__link {
-    color: var(--icon-fill);
+    color: $icon-fill;
     &:hover,
     &:focus {
-      color: var(--active-btn-color);
-      background-color: var(--active-btn-background-color);
+      color: $secondary-main-color;
+      background-color: $accent-color;
     }
   }
 }
 
 .social--dark {
   .social__link {
-    color: var(--footer-icon-fill);
+    color: $secondary-main-color;
     background-color: rgba(255, 255, 255, 0.1);
 
     &:hover,
     &:focus {
-      background-color: var(--active-btn-background-color);
+      background-color: $accent-color;
     }
   }
 }

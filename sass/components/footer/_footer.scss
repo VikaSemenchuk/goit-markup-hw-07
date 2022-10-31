@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--hero-footer-background-color);
+  background-color: $secondary-background-color;
 
   &__container {
     display: flex;
@@ -15,7 +15,7 @@
     text-align: start;
     margin-bottom: 20px;
 
-    @include text(null, 14px, 1.14, null, var(--studio-footer-color));
+    @include text(null, 14px, 1.14, null, $secondary-main-color);
 
     text-transform: uppercase;
   }

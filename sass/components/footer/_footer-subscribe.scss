@@ -1,5 +1,5 @@
 .subscribe {
-  color: var(--studio-footer-color);
+  color: $secondary-main-color;
 }
 
 .subscribe__container {
@@ -22,7 +22,7 @@
   width: 100%;
   height: 100%;
 
-  @include text(null, 16px, 1.25, null, var(--studio-footer-color));
+  @include text(null, 16px, 1.25, null, $secondary-main-color);
 
   // outline: transparent;
 
@@ -37,9 +37,9 @@
 }
 
 .form__btn {
- display: flex;
- align-items: center;
- justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
 
   min-width: 200px;
