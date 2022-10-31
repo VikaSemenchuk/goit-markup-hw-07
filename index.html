@@ -484,53 +484,53 @@
     </footer>
 
     <!--------------------------------- modal ----------------------------------------->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop -is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-btn" type="button" data-modal-close>
-          <svg class="icon-close" width="18" height="18">
+        <button class="modal__close-btn" type="button" data-modal-close>
+          <svg class="modal__icon-close" width="18" height="18">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <form class="modal-form">
-          <div class="form-item">
-              <label for="user-name" class="form-label"></label>
-              <span class="form-text">Ім'я</span>
-              <div class="input-wrap">
-                <input class="form-input modal-input" type="text" name="user-name" id="user-name" required />
-                <svg class="icon-input" width="18" height="18">
+        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="details-form">
+          <div class="details-form__item">
+              <label for="user-name" class="details-form__label"></label>
+              <span class="details-form__text">Ім'я</span>
+              <div class="details-form-wrap">
+                <input class="details-form-wrap__input modal-input" type="text" name="user-name" id="user-name" required />
+                <svg class="details-form-wrap__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="form-item">
-              <span class="form-text">Телефон</span>
-              <label for="user-tel" class="form-label"></label>
-              <div class="input-wrap">
-                <input class="form-input modal-input" type="tel" name="user-tel" id="user-tel" required />
-                <svg class="icon-input" width="18" height="18">
+            <div class="details-form__item">
+              <span class="details-form__text">Телефон</span>
+              <label for="user-tel" class="details-form__label"></label>
+              <div class="details-form-wrap">
+                <input class="details-form-wrap__input modal-input" type="tel" name="user-tel" id="user-tel" required />
+                <svg class="details-form-wrap__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="form-item">
-              <span class="form-text">Пошта</span>
-              <label for="user-mail" class="form-label"></label>
-              <div class="input-wrap">
-                <input class="form-input modal-input" type="email" name="user-mail" id="user-mail" required />
-                <svg class="icon-input" width="18" height="18">
+            <div class="details-form__item">
+              <span class="details-form__text">Пошта</span>
+              <label for="user-mail" class="details-form__label"></label>
+              <div class="details-form-wrap">
+                <input class="details-form-wrap__input modal-input" type="email" name="user-mail" id="user-mail" required />
+                <svg class="details-form-wrap__icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
               </div>
             </div>
 
-            <div class="comment">
-              <span class="form-text">Коментар</span>
-              <label for="user-comment" class="form-label"></label>
+            <div class="details-form__comment">
+              <span class="details-form__text">Коментар</span>
+              <label for="user-comment" class="details-form__label"></label>
               <textarea
-                class="form-comment modal-input"
+                class="details-form__comment-text modal-input"
                 name="user-comment"
                 id="user-comment"
                 placeholder="Введіть текст"
@@ -539,21 +539,21 @@
           <div class="checkbox">
             <input
               type="checkbox"
-              class="checkbox-input visually-hidden"
+              class="checkbox__input visually-hidden"
               id="checkbox-agreement"
               required
             />
-            <label for="checkbox-agreement" class="checkbox-text">
+            <label for="checkbox-agreement" class="checkbox__text">
               <span>
-                <svg class="icon-check" width="16" height="15">
+                <svg class="checkbox__icon" width="16" height="15">
                   <use href="./images/icons.svg#icon-icon-check"></use>
                 </svg>
               </span>
               Погоджуюся з розсилкою та приймаю
-              <a class="agreement" href="">Умови договору</a></label
+              <a class="checkbox__agreement" href="">Умови договору</a></label
             >
           </div>
-          <button class="form-btn btn__accent" type="submit">Відправити</button>
+          <button class="details-form__btn btn__accent" type="submit">Відправити</button>
         </form>
       </div>
     </div>

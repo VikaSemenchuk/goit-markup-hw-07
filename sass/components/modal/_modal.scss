@@ -18,7 +18,7 @@
   transform: translate(-50%, -50%) scaley(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &-close-btn {
+  &__close-btn {
     position: absolute;
 
     @extend %aligner;
@@ -47,12 +47,12 @@
       border-color: var(--active-btn-background-color);
     }
 
-    .icon-close {
+    .modal__icon-close {
       fill: currentColor;
     }
   }
 
-  &-title {
+  &__title {
     margin-bottom: 12px;
 
     text-align: center;
